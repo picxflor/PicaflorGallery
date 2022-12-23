@@ -1,8 +1,43 @@
-<html>
-  <head>
-    <tittle>H ello World </tittle>
-  </head>
-  <body>
-    <h1> Hola mundo </h1>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picaflor Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- NAVEGADOR -->
+ 
+        <nav class="nav">
+            <a href="index.html" class="logo">PICAFLOR</a>
+            <ul>
+                <li><a href="#">6pm</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <section class="banner"></section>
+   
+
+    <!-- CONTENT -->
+   <script>
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("bajar", window.scrollY>0);
+        })
+    </script>
+
+    
+    
+
+
+</body>
+
 </html>
